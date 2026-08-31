@@ -121,36 +121,6 @@ Running the notebook regenerates all dissertation figures and tables, including:
 
 ---
 
-## ⚠️ Security note (action required)
-
-An **EIA API key is currently hardcoded** in the EIA-calendar cell. Before making this repository public you **must**:
-
-1. **Revoke that key** at https://www.eia.gov/opendata/ and issue a new one.
-2. Replace the hardcoded value with an environment variable, e.g.:
-
-```python
-import os
-EIA_API_KEY = os.environ["EIA_API_KEY"]   # set this in your shell, do not commit it
-```
-
-3. Never commit API keys, tokens, or credentials to version control. Add a `.gitignore` entry for any local secrets file.
-
-A free EIA API key can be obtained at https://www.eia.gov/opendata/register.php.
-
----
-
-## Citation
-
-If you refer to this work, please cite the dissertation:
-
-> *How Geopolitical Shocks Propagate into Gas Prices.* MSc Dissertation, UCL Energy Systems and Data Analytics (BENV0096), 2026.
-
----
-
-## Acknowledgements
-
-Data sources: ICE/CME futures (hub prices), U.S. Energy Information Administration (storage and release calendar), Caldara and Iacoviello (GPR index), and industry chokepoint-transit estimates.
-
 ## License
 
-This code is provided for academic and review purposes. See `LICENSE` if included; otherwise all rights reserved by the author.
+This code is provided for academic and review purposes. See `LICENSE` if included; otherwise all rights reserved by the author and school.
